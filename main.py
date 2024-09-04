@@ -14,7 +14,7 @@ except FileNotFoundError:
         'message' : 'change message',
         'TOKEN' : 'change TOKEN'  
     }
-    json.dump(config, open('config.json', 'w'))
+    json.dump(config, open('config.json', 'w'), indent=4)
 
 bot = telebot.TeleBot(TOKEN)
  
